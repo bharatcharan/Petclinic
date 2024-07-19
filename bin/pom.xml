@@ -552,5 +552,16 @@
             <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
-
+         <project>
+    ...
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version> <!-- Use a version compatible with Java 8 -->
+            </plugin>
+        </plugins>
+    </build>
+    ...
 </project>
